@@ -3,6 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    /* font-family: 'archivo', sans-serif; */
+    /* font-family: 'muli', sans-serif; */
+    font-family: 'nunito', sans-serif;
+    
+}
 a{
     text-decoration: none;
 }
@@ -39,6 +45,12 @@ a{
     color: #2741c3;
     font-size: 20px;
 }
+.d-btn{padding: 1% 4%;
+    background-color: #2741c3;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+  }
 .navbar a:hover{
     border-bottom: rgba(64, 163, 248, 1) 2px solid;
 }
@@ -58,7 +70,7 @@ a{
 .fs-25{font-size: 25px;}
 .fs-18{font-size: 18px;}
 .fs-22{font-size: 22px;}
-.fs-40{font-size: 40px;}
+.fs-50{font-size: 50px;}
 .fs-30{font-size: 30px;}
 .fs-20{font-size: 20px;}
 
@@ -220,11 +232,13 @@ a{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    box-shadow: .5px .5px 1px .5px;
+    /* box-shadow: .5px .5px 1px .5px; */
     border-radius: 5px;
     /* padding-right: 5%; */
     margin-bottom: 5%;
     padding: 4%;
+    border: 1px grey solid;
+
 }
 
 .price-item {
@@ -288,6 +302,8 @@ a{
     padding: 2% 0;
     border: none;
     border-radius: 5px;
+    background-color: #8b8bdd;
+    cursor: pointer;
 }
 .d-footer{
     padding: 5%;
@@ -308,6 +324,10 @@ a{
     }
 }
 @media screen and (max-width:1024px) {
+    .d-footer a,
+    .d-footer2 a{
+        font-size: 13px;
+    }
     .d-foot{
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -328,9 +348,9 @@ a{
         width: 30%;
 
     }
-    .nav1,.nav2{
+    /* .nav1,.nav2{
         width: 47.5%;
-    }
+    } */
     .d-original{display: none;}
     .navbar{
         /* display: block; */

@@ -5,7 +5,12 @@
   
 }
 
-
+body{
+    /* font-family: 'archivo', sans-serif; */
+    /* font-family: 'muli', sans-serif; */
+    font-family: 'nunito', sans-serif;
+    
+}
 /* ====generic styling===== */
 
 .display-grid {
@@ -23,8 +28,9 @@
 }
 .cartNo{
     position: absolute;
-    top: 0;
+    top: 20px;
     color: orange;
+    font-size: 15px;
 }
 /* font sizes */
 
@@ -48,8 +54,8 @@
     font-size: 22px;
 }
 
-.fs-40 {
-    font-size: 40px;
+.fs-50 {
+    font-size: 50px;
 }
 
 .fs-30 {
@@ -88,7 +94,7 @@
 }
 
 .black-bg-color {
-    background: #000;
+    background: #8b8bdd;
 }
 
 .margin-bt {
@@ -179,6 +185,7 @@
     border: none;
     border-radius: 5px;
     margin-right: 2%;
+    cursor: pointer;
 }
 
 .btn-2-love-icon {
@@ -213,6 +220,7 @@
 .suggest-text {
     margin-bottom: 1%;
     font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .product-item {
@@ -267,6 +275,12 @@ a{
 .navbar a:hover{
     border-bottom: rgba(64, 163, 248, 1) 2px solid;
 }
+.d-btn{padding: 1% 4%;
+    background-color: #2741c3;
+    outline: 0;
+    border: 0;
+    border-radius: 3px;
+  }
 .d-search input{padding: 2% 0;}
 .bbb{display: none;}
 
@@ -283,6 +297,11 @@ a{
 .d-footer a,.d-footer2 a{
     color: #575454;
 }
+
+.suggest-product img {
+    height: 300px;
+}
+
 /* =====media query section */
 @media only screen and (max-width:1300px){
     .nav1,.nanv2{
@@ -291,6 +310,10 @@ a{
 }
 
 @media screen and (max-width: 1024px) {
+    .d-footer a,
+    .d-footer2 a{
+        font-size: 13px;
+    }
     .d-foot{
         display: grid;
         gap: 0;
@@ -312,9 +335,9 @@ a{
         width: 30%;
 
     }
-    .nav1,.nav2{
+    /* .nav1,.nav2{
         width: 47.5%;
-    }
+    } */
     .d-original{display: none;}
     .navbar{
         /* display: block; */

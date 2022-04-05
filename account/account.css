@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+body{
+    background: linear-gradient(12deg, #bcbbd2, #cce6ef, #e7c8e0);
+}
+.logo{
+    width: 15%;
+}
+.fm{
+    margin: 0 auto;
+    width: 35%;
+    padding: 5%;
+    color: rgb(124, 121, 121);
+   background-color: linear-gradient(12deg, #bcbbd2, #cce6ef, #e7c8e0);
+    border-radius: 5px;
+}
+h2{
+    color: blue;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+input,button{
+    padding: 20px;
+    color: #333;
+    outline: 0;
+    border: 0;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 100%;
+
+}
+input{
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+.password{
+    margin-top: 15px;
+   
+}
+.content{
+    position: relative;
+}
+.show{
+    color: rgb(131, 126, 126);
+    cursor: pointer;
+    right: 5%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+/* .show{
+  margin-right: -25px;
+
+
+} */
+button{
+    background-color: blue;
+    margin-top: 30px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4%;
+}
+.lil{
+    display: flex;
+    align-items: center;
+}
+p{
+    color: rgb(124, 121, 121);
+}
+.password-notify,.email-notify{
+    color: #e87c03;
+    font-size: 0.9rem;
+}
+
+.inp-b-btm {
+    border-bottom: #e87c03 solid 3px;
+}
+.facebook>a>img{
+    width: 25px;
+}
+.facebook>a, .sign-up{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.facebook>a>img>p{
+    color: rgb(124, 121, 121);
+}
+.facebook>a{
+    text-decoration: none;
+}
+.facebook{
+    margin-top: 15%;
+}
+.sign-up,.learn{
+    margin-top: 4%;
+}
+.learn>p>a{
+    color: rgb(54, 137, 185);
+    text-decoration: none;
+}
+.sign-up>a{
+    text-decoration: none;
+    color: blue;
+    font-size: 1.1rem;
+}
+.check>p>a{
+    text-decoration: none;
+    color: rgb(124, 121, 121);
+}
+/* .radio-type-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+} */
+.radio-type {
+    display: flex;
+    margin-top: 17%;
+    margin-right: 10%;
+}
+
+
+
+@media only screen and (max-width:1024px) {
+    .fm{
+        width: 55%;
+    }
+}
+@media only screen and (max-width:480px) {
+    .fm{
+        width: 100%;
+    }
+}

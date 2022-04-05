@@ -1,5 +1,4 @@
 import { categories } from "../allproducts/js/categories.js";
-console.log(0);
 const categoryRequested = window.location.search
   .slice(1, window.location.search.length)
   .toLowerCase();
@@ -21,7 +20,6 @@ let previewImg3 = document.querySelector(".previw-img-3");
 
 for (let item of productObjectsArray) {
   if (product === item.productName.toLowerCase()) {
-    console.log(item);
     productNameSpace.innerHTML = item.productName;
     mainImg.src = item.image;
     price.innerHTML = item.price;
@@ -36,10 +34,10 @@ for (let item of productObjectsArray) {
 const suggestedItemDisplay = document.querySelector(
   ".suggest-product-display-grid"
 );
-console.log(suggestedItemDisplay);
 
 function addToSuggestedCartItem() {
-  for (let i = 0; i<=4; i++) {
+  console.log(0)
+  for (let i = 0; i<=3; i++) {
     let suggestedItems = productObjectsArray[i];
     let newSuggestedItems = document.createElement("div");
     newSuggestedItems.classList.add("suggest-product");
@@ -53,6 +51,7 @@ function addToSuggestedCartItem() {
                             <p class="fw-bold">${suggestedItems.productName}</p>
                             <small>${suggestedItems.price}</small>
             </div>`;
+            
 
     suggestedItemDisplay.appendChild(newSuggestedItems);
     // console.log(newSuggestedItems)
@@ -62,11 +61,11 @@ addToSuggestedCartItem();
 
 // like item icon
 const likeItemIcon = document.querySelectorAll(".fa-heart");
-likeItemIcon.forEach((icon) => {
-  icon.addEventListener("click", clickToLikeItem);
+// likeItemIcon.forEach((icon) => {
+//   icon.addEventListener("click", clickToLikeItem);
 
-  function clickToLikeItem() {
-    icon.classList.toggle("like-icon");
-  }
-  addToSuggestedCartItem();
-});
+//   function clickToLikeItem() {
+//     icon.classList.toggle("like-icon");
+//   }
+//   addToSuggestedCartItem();
+// });

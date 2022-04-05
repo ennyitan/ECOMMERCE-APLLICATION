@@ -3,8 +3,8 @@ if(!sessionStorage.getItem('cart')) {
     sessionStorage.setItem('cart', JSON.stringify([]))
 }
 
-let slideImage = ['bite1.webp','bite2.webp','bite3.webp','bite4.webp']
-let sliderText = ['Enjoy Your shopping with us', "Giving You The Best You Deserve", "Your Satisfaction is our Pleasure", "Thank you for shopping with us"]
+let slideImage = ['bite1.webp','iphone12.webp',"laptop.jpg",'bite3.webp','bite4.webp']
+let sliderText = ['Enjoy Your shopping with us','Enjoy Your shopping with us', "Giving You The Best You Deserve", "Your Satisfaction is our Pleasure", "Your Satisfaction is our Pleasure","Thank you for shopping with us"]
 let count = 0
 let textSliding = document.querySelector('.textslide')
 let headerSlider = document.querySelector('.slider')

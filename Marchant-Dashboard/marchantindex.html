@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marchant Dashboard</title>
+    <!-- MATERIAL CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="./css/marchantstyle.css" />
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <!-- <img src="./images/logo.png" /> -->
+                    <h2 class="blu fs-50">Snuks</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="../index.html" class="active">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Home</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Profile</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Order list</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Notifications</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Products</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add Product</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!------------------ END OF ASIDE ------------------>
+        <main>
+            <div class="dash-social">
+                <h1 class="marchant-dashboard blu fs-50">Merchant Dashoard</h1>
+                <div class="social-links">
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-whatsapp"></i><span class="order-message">23</span></a>
+                </div>
+            </div>
+            <!------------ END OF INSIGHTS -------------->
+
+            <div class="recent-orders">
+                <h2 class="blu">Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                         -->
+                    </tbody>
+                </table>
+
+                <a href="#">Show All</a>
+            </div>
+            <div class="record-section">
+                <div class="record">
+                    <i class="fa-solid fa-euro-sign icon"></i>
+                    <h4>Total Revenue</h4>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                    <h2>$68,000</2>
+                </div>
+                <div class="record">
+                    <i class="fa-solid fa-calendar-days icon"></i>
+                    <h4>Total Instore products</h4>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                    <h2>120,000</h2>
+                </div>
+                <div class="record">
+                    <i class="fa-solid fa-calendar-days icon"></i>
+                    <h4>Monthly Revenue</h4>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                    <h2>$20,000</h2>
+                </div>
+                <div class="record">
+                    <i class="fa-solid fa-calendar-days icon"></i>
+                    <h4>Outlet info</h4>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                    <h2>500</h2>
+                </div>
+                <div class="record">
+                    <i class="fa-solid fa-calendar-days icon"></i>
+                    <h4>Campaigns</h4>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                    <h2>28</h2>
+                </div>
+                <div class="record">
+                    <i class="fa-solid fa-chart-line icon"></i>
+                    <h4>ORder History</h4>
+                    <small>Lorem ipsum dolor sit amet.</small>
+                    <h2>8,000</2>
+                </div>
+            </div>
+        </main>
+        <!----------------- END OF MAIN -------------------->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+            <span class="material-icons-sharp">menu</span>
+          </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hello, <b>Opeyemi</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="./images/profile-1.jpg" />
+                    </div>
+                </div>
+            </div>
+            <!-- END OF TOP -->
+            <div class="recent-updates">
+                <h2 class="blu">Delivery Updates</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-2.jpg" />
+                        </div>
+                        <div class="message">
+                            <p>
+                                <b>Oluwaseyi Senetor</b> received his order of Night lion tech GPS drone.
+                            </p>
+                            <small class="text-muted">1 Hour Ago</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="./images/profile-3.jpg" />
+                        </div>
+                        <div class="message">
+                            <p>
+                                <b>Doyin Funmi</b> received his order of Night lion tech GPS drone.
+                            </p>
+                            <small class="text-muted">2 Minutes Ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!----------------- END OF RECENT UPDATES -------------------->
+            <div class="sales-analytics">
+                <h2 class="blu">Delivery Analytics</h2>
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-icons-sharp">shopping_cart</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>ONLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="success">+39%</h5>
+                        <h3>3849</h3>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-icons-sharp">local_mall</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>OFFLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5 class="danger">-17%</h5>
+                        <h3>1100</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/marchantsubscript.js"></script>
+    <script src="./js/marchantmainscript.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./affiliatestyle.css">
+    <title>affiliate form</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <form action="">
+            <h2>Merchant Sign Up Form</h2>
+            <div class="name margin-bt">
+                <input type="text" name="yourname" id="name" placeholder="Your name" class="input-full-width input-padding input-style">
+            </div>
+            <div class="email margin-bt">
+                <input type="email" name="email" id="email" placeholder="Your email" class="input-full-width input-padding input-style">
+            </div>
+            <div class="number margin-bt">
+                <input type="phone" name="number" id="number" placeholder="mobile number" class="input-full-width input-padding input-style">
+            </div>
+            <div class="password margin-bt">
+                <input type="password" name="password" id="password" placeholder="password" class="input-full-width input-padding input-style">
+            </div>
+            <div class="confirm-pass margin-bt">
+                <input type="password" name="confirm password" id="password-cinfirm" placeholder="confirm password" class="input-full-width input-padding input-style">
+            </div>
+            <div class="address margin-bt">
+                <input type="text" name="address" id="address" placeholder="address" class="input-full-width input-padding input-style">
+            </div>
+            <div class="company-name margin-bt">
+                <input type="text" name="company" id="company" placeholder="Company's Name" class="input-full-width input-padding input-style">
+            </div>
+            <div class="rcc-number margin-bt">
+                <input type="text" name="rccnumber" id="rcc" placeholder="RCC(Optional)" class="input-full-width input-padding input-style">
+            </div>
+            <div class="date-birth margin-bt">
+                <span style="font-size: 18px;">Date of birth</span> <br>
+
+                <select name="DoBmonth" id="month">
+                <option>Month</option>
+                <option value="january">January</option>
+                <option value="february">February</option>
+            </select>
+
+                <select name="DoBDay" id="day">
+                <option>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+            </select>
+
+                <select name="DoByear" id="year">
+                <option>Year</option>
+                <option value="2000">2000</option>
+                <option value="1990">1990</option>
+            </select>
+            </div>
+            <div class="gender margin-bt">
+                <input type="radio" name="gender" value="male" id="male"> Male
+                <input type="radio" name="gender" value="female" id="female"> Female
+            </div>
+            <div class="file margin-bt">
+                <input type="file">
+            </div>
+            <div class="category-section margin-bt input-style">
+                <select>
+                    <option value="">Select a Category</option>
+                    <option value="">Electronics</option>
+                    <option value="">Fashion</option>
+                    <option value="">Computer</option>
+                    <option value="">Others</option>
+                </select>
+            </div>
+            <p class="margin-bt terms"><a href="#" class="terms">Term and Condition</a></p>
+            <input type="checkbox" class="margin-bt"> I Agree to The Term of Use
+            <br>
+            <div class="button-container">
+                <button class="sign-up-btn" id="sign-up" onclick="validateRegistration()">SUBMIT</button>
+            </div>
+        </form>
+
+
+        <!-- ======Modal section ===== -->
+        <div class="login-modal" id="register">
+            <div class="modal-header">
+                <h3 class="text-green">Registration Successful !!!!</h3>
+                <span class="close" id="closeReg">&times;</span>
+            </div>
+            <div class="form">
+                <h3> click ok to continue <i class="fa-solid fa-arrow-right"></i></h3>
+                <a href="../../account/account.html" class="ok-btn">Ok</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./affiliatescript.js"></script>
+</body>
+
+</html>
