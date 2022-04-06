@@ -13,7 +13,7 @@ sign.addEventListener("click", e =>{
             } else if(radio.value === 'regular'){
                 window.open(`../index.html`, '_self')
             }else{
-                window.open(`../marchant-Dashboard/marchantindex.html`, '_self')
+                window.open(`../Marchant-Dashboard/marchantindex.html`, '_self')
             }
         }
     }
