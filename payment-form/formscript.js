@@ -12,7 +12,7 @@ closeBtn.addEventListener('click', function() {
 let explore = document.getElementById('purchase-btn')
 explore.addEventListener('click', function(e) {
         e.preventDefault()
-        loginModal.style.top = "278px";
+        loginModal.style.top = "225px";
     })
     // let exploreReg = document.getElementById("dropbtnReg")
     // exploreReg.addEventListener('click', function() {
