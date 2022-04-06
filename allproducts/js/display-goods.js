@@ -16,7 +16,7 @@ for (let product of categories[categoryRequested]){
         <p class="mg-b">${product.price}</p>
         <p class="text-ellipsis mg-b">${product.description}</p>
         
-        <div class="mg-tp shopnow"><a href= "#">Shop now</a></div>
+        <div class="mg-tp shopnow"><a class="shopshop" href= "#">Shop now</a></div>
         </div>
     </div>
    </a>

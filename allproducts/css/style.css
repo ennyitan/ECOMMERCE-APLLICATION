@@ -120,13 +120,13 @@ a{
     margin-bottom: 2;
     text-decoration: none;
     color: black;
-    transition: 2s ease;
+    /* transition: 2s ease; */
 }
 
 .sect-1 a:hover {
     color: blueviolet;
     background: rgba(0, 0, 0, 0.05);
-    border-bottom: 2px solid blueviolet;
+    /* border-bottom: 2px solid blueviolet; */
 }
 
 .sect-2 {
@@ -178,11 +178,18 @@ a{
     width: 80%;
     margin-left: 20%;
 }
+.shopshop{
+    font-size: 20px;
+    color: blue;
+}
+.shopnow{
+    color: blue;
+}
 .card{
     background-color: white;
     padding: 2%;
     border-radius: 2%;
-    width: 31%;
+    width: 23.2%;
     margin-bottom: 3%;
     box-shadow: 10px 10px 7px grey;  
     transition: 0.5s;
@@ -197,6 +204,7 @@ a{
 }
 .all-items-link{
     text-decoration: none;
+    color: blue;
 }
 
 .fa-star {
