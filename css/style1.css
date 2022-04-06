@@ -812,6 +812,12 @@ textarea{
         font-size: 20px;
     }
 }
+@media only screen and (max-width:480px) {
+    .slider{
+        background-size: cover;
+    background-position: bottom;
+    }
+}
 
 @media only screen and (max-width:480px) {
     .card {
